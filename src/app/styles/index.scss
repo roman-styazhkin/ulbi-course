@@ -10,6 +10,15 @@
   min-height: 100vh;
 }
 
+.content-inner {
+  display: flex;
+}
+
+.content-page {
+  padding: 20px;
+  flex-grow: 1;
+}
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
