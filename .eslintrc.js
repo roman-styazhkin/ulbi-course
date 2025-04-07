@@ -41,6 +41,8 @@ module.exports = {
         markupOnly: true,
       },
     ],
+
+    'max-len': ['error', { ignoreComments: true }],
   },
 
   globals: {

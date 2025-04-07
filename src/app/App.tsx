@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <div className="content-inner">
         <Sidebar />
-        <Suspense fallback={<div>Loding...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
           <AppRouter />
         </Suspense>
       </div>

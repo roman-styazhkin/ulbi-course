@@ -26,7 +26,9 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
       options: {
         presets: ['@babel/preset-env'],
         plugins: [
-          ['i18next-extract', { locales: ['en', 'ru'], keyAsDefaultValue: true }],
+          ['i18next-extract',
+            { locales: ['en', 'ru'], keyAsDefaultValue: true },
+          ],
         ],
       },
     },
@@ -46,7 +48,9 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
         options: {
           modules: {
             auto: (resPath: string) => resPath.endsWith('.module.scss'),
-            localIdentName: options.isDev ? '[path][name]__[local]--[hash:base64:5]' : '[hash:base64:8]',
+            localIdentName: options.isDev
+              ? '[path][name]__[local]--[hash:base64:5]'
+              : '[hash:base64:8]',
             namedExport: false,
           },
         },
