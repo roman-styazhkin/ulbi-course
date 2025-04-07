@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { AppRouteConfig } from 'shared/config/routeConfig/routerConfig';
 
-export const AppRouter = () => (
+const AppRouter = () => (
   <Routes>
     {Object.values(AppRouteConfig).map((route) => (
       <Route
@@ -12,3 +12,5 @@ export const AppRouter = () => (
     ))}
   </Routes>
 );
+
+export default AppRouter;
